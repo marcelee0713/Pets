@@ -8,17 +8,72 @@ body{
     flex-direction: column;
 }
 header{
-    background-color: #F9E79F;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #234a56;
+    color:#dde7dc;
+    font-size: 42px;
+    font-weight: bolder;
+    height: 150px;
+    padding: 0 150px;
+}
+.links{
+    display: flex;
+    gap: 16px;
+}
+.links img{
+    width: 30px;
 }
 section{
     display:flex;
     flex:1;
     flex-direction: column;
 }
+.section-one, .section-two, .section-three{
+    display: flex;
+    padding: 75px 150px 75px 150px;
+    gap: 32px;
+}
+.section-one{
+    background-color: #417d95;
+}
+.section-two{
+    background-color: #89b9c5;
+}
+.section-two .description{
+    color:#417d95;
+}
+.section-three{
+    background-color: #c1dee2;
+}
+.section-three .description{
+    color:#234a56;
+}
+.description{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color:#dde7dc;
+}
 img{
     width: 350px;
+    border-radius: 10px;
 }
 footer{
-    background-color: #D5D5D5  ;
+    height: 75px;
+    color:#dde7dc;
+    background-color: #234a56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a{
+    text-decoration: none;
+    color: #dde7dc;
+}
+footer a:hover{
+    text-decoration: underline;
 }
