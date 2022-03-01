@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 *{
-    font-family: 'Asap';
+    font-family: 'Asap', sans-serif;
 }
 body{
     margin:0;
@@ -8,72 +9,139 @@ body{
     flex-direction: column;
 }
 header{
+    font-family: 'Josefin Sans', sans-serif;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: #234a56;
-    color:#dde7dc;
+    justify-content:space-between;
+    background-color: #1F1F1F;
+    color:#6C6EF0;
     font-size: 42px;
     font-weight: bolder;
     height: 150px;
-    padding: 0 150px;
+    padding: 0 250px;
 }
-.links{
+.side-links{
     display: flex;
     gap: 16px;
+    font-size: 16px;
 }
-.links img{
-    width: 30px;
+.side-links a{
+    text-decoration: none;
+}
+.side-links div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:#6C6EF0;
+    color:#1F1F1F;
+    transition:0.2s;
+}
+.side-links div:hover{
+    box-shadow: 0px 0px 10px 1px #6C6EF0;
 }
 section{
     display:flex;
     flex:1;
     flex-direction: column;
 }
+.introduction{
+    background-color: #1F1F1F;
+    display: flex;
+    justify-content: space-between;
+    padding: 75px 250px;
+}
+.introduction-description{
+    display:flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 750px;
+}
+.introduction-description .big-text{
+    color:#6C6EF0;
+}
+.introduction-description .small-text{
+    text-align: justify;
+    color:#6C6EF0;
+}
+.introduction-description button{
+    width: 95px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:#6C6EF0;
+    color:#1F1F1F;
+    font-size: 16px;
+    font-weight: bold;
+    transition:0.2s;
+}
+.introduction-description button:hover{
+    box-shadow: 0px 0px 10px 1px #6C6EF0;
+}
 .section-one, .section-two, .section-three{
     display: flex;
-    padding: 75px 150px 75px 150px;
-    gap: 32px;
+    padding: 75px 250px;
+    gap: 48px;
 }
 .section-one{
-    background-color: #417d95;
+    background-color: #6C6EF0;
+}
+.section-one .description{
+    color:#21FFF8;
 }
 .section-two{
-    background-color: #89b9c5;
+    flex-direction: row-reverse;
+    background-color: #21FFF8;
 }
 .section-two .description{
-    color:#417d95;
+    color: #6C6EF0;
 }
 .section-three{
-    background-color: #c1dee2;
+    background-color: #B4F060;
 }
 .section-three .description{
-    color:#234a56;
+    color:#6C6EF0;
 }
 .description{
-    width: 600px;
+    width: 700px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
     text-align: justify;
-    color:#dde7dc;
+}
+.big-text{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
 }
 img{
     width: 350px;
-    border-radius: 10px;
 }
 footer{
-    height: 75px;
-    color:#dde7dc;
-    background-color: #234a56;
+    height: 90px;
+    color:#6C6EF0;
+    background-color: #1F1F1F;
     display: flex;
+    gap: 10px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 footer a{
     text-decoration: none;
-    color: #dde7dc;
+    color: #6C6EF0;
 }
 footer a:hover{
     text-decoration: underline;
+}
+.social-links{
+    display: flex;
+    gap: 16px;
+}
+.social-links img{
+    width: 30px;
+    transition: 0.2s;
+}
+.social-links img:hover{
+    transform: scale(1.1);
 }
