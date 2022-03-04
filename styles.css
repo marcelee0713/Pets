@@ -115,6 +115,7 @@ section{
     font-size: 50px;
 }
 .questions{
+    background-color: #6C6EF0;
     display: flex;
     flex-direction: row-reverse;
     gap: 48px;
@@ -127,8 +128,11 @@ section{
     padding: 16px;
     border: 5px solid #1F1F1F;
     flex-direction: column;
-    box-shadow: -10px 10px #6C6EF0;
+    box-shadow: -10px 10px #292929;
     width: 700px;
+}
+.questions-container .big-text{
+    text-align: center;
 }
 .questions-container form{
     display: flex;
