@@ -114,6 +114,62 @@ section{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 50px;
 }
+.questions{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 48px;
+    padding: 75px 250px;
+}
+.questions-container{
+    display: flex;
+    background-color: #1F1F1F;
+    color:#6C6EF0;
+    padding: 16px;
+    border: 5px solid #1F1F1F;
+    flex-direction: column;
+    box-shadow: -10px 10px #6C6EF0;
+    width: 700px;
+}
+.questions-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+input,textarea{
+    color:#6C6EF0;
+}
+input[type=text], input[type=email],textarea {
+    background-color: #1F1F1F;
+    border: none;
+    border-bottom: 2px solid #6C6EF0;
+}
+input[type=text]:focus,input[type=email]:focus,textarea:focus {
+    color:#6C6EF0;
+    outline:none;
+}
+input[type=text]:valid{
+    background-color: #1F1F1F;
+    color:#6C6EF0;
+}
+input[type=submit]{
+    width: 90px;
+    background-color: #1F1F1F;
+    color:#6C6EF0;
+    border: 1px solid #6C6EF0;
+    height: 30px;
+    cursor: pointer;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #1F1F1F inset !important;
+    -webkit-text-fill-color: #6C6EF0 !important;
+}
+.message-left{
+    height:100px;
+    box-sizing: border-box;
+}
 img{
     width: 350px;
 }
