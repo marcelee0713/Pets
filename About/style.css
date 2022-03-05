@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+*{
+    font-family: 'Asap', sans-serif;
+}
+body{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header{
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #1F1F1F;
+    color:#6C6EF0;
+    font-size: 42px;
+    font-weight: bolder;
+    height: 150px;
+    padding: 0 250px;
+}
+.header-text a{
+    font-family: 'Josefin Sans', sans-serif;
+    color:#6C6EF0;
+    text-decoration: none;
+}
+.side-links{
+    display: flex;
+    gap: 16px;
+    font-size: 16px;
+}
+.side-links a{
+    text-decoration: none;
+}
+.side-links div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:#6C6EF0;
+    color:#1F1F1F;
+    transition:0.2s;
+}
+.side-links div:hover{
+    box-shadow: 0px 0px 10px 1px #6C6EF0;
+}
+section{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-color: #6C6EF0;
+}
+section img{
+    height: 400px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.container img{
+    align-self: center;
+}
+.about-text{
+    margin-left: 350px;
+    margin-right: 350px;
+    text-align: center;
+}
+.about-credits{
+    margin-left: 350px;
+    margin-right: 350px;
+    text-align: center;
+}
+.about-credits a, .about-text a{
+    text-decoration: none;
+    font-weight: bolder;
+    color:#1F1F1F;
+}
+footer{
+    height: 90px;
+    color:#6C6EF0;
+    background-color: #1F1F1F;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer a{
+    text-decoration: none;
+    color: #6C6EF0;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+.social-links{
+    display: flex;
+    gap: 16px;
+}
+.social-links img{
+    width: 30px;
+    transition: 0.2s;
+}
+.social-links img:hover{
+    transform: scale(1.1);
+}

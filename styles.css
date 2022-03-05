@@ -20,6 +20,11 @@ header{
     height: 150px;
     padding: 0 250px;
 }
+.header-text a{
+    font-family: 'Josefin Sans', sans-serif;
+    color:#6C6EF0;
+    text-decoration: none;
+}
 .side-links{
     display: flex;
     gap: 16px;
